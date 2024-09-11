@@ -1,0 +1,42 @@
+.paginas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 4rem;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu li + li {
+  padding-left: 0.5rem;
+}
+
+.menu nav a {
+  text-decoration: none;
+  color: var(--text-1);
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.perfil div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.perfil div img:first-child {
+  border-radius: 3px;
+}
