@@ -25,6 +25,19 @@ ul {
   color: var(--text-1);
 }
 
+.menu nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--text-1);
+  transition: width 0.2s ease;
+}
+
+.menu nav a:hover::after {
+  width: 100%;
+}
+
 .perfil {
   display: flex;
   align-items: center;
