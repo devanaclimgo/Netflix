@@ -12,4 +12,67 @@ header {
   padding: 0.26rem 0.75rem 0 0.75rem;
   width: 100%;
   background-position: center;
+  position: absolute;
+}
+
+main article {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 240px;
+  margin-left: 2rem;
+}
+
+main article p {
+  color: white;
+  width: 450px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.7rem;
+}
+
+.menu-botoes {
+  display: flex;
+  gap: 2rem;
+  font-family: inherit;
+}
+
+.menu-botoes button {
+  display: flex;
+  font-size: 100%;
+  font-weight: 600;
+  align-self: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 0.125rem;
+  padding: 0.6rem 2rem;
+  text-transform: bold;
+  border: solid transparent;
+  cursor: pointer;
+}
+
+.menu-botoes button img {
+  transform: rotate(90deg);
+}
+
+.menu-botoes button:hover {
+  background-color: rgba(255, 255, 255, 0.777);
+}
+
+.menu-botoes a {
+  display: flex;
+  align-self: center;
+  font-size: 100%;
+  font-weight: 600;
+  background-color: rgba(109, 109, 110, 0.7);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.125rem;
+  padding: 0.6rem 2rem;
+  gap: 0.5rem;
+  border: solid transparent;
+}
+
+.menu-botoes a:hover {
+  background-color: rgba(109, 109, 110, 0.525);
 }
