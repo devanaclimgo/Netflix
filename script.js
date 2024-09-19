@@ -9,4 +9,6 @@ mainMenu.parentNode.insertBefore(toggleButton, mainMenu);
 
 toggleButton.addEventListener("click", function() {
   mainMenu.classList.toggle("show");
+
+  toggleButton.classList.toggle("clicked");
 })
