@@ -1,0 +1,19 @@
+.catalogo h3 {
+  color: white;
+  margin-bottom: 0.7rem;
+  margin-top: 2rem;
+}
+
+.catalogo.um h3 {
+  margin-top: 5rem;
+}
+
+.catalogo li {
+  margin-right: 1rem;
+  list-style-type: none;
+}
+
+.container {
+  overflow-x: hidden;
+  white-space: nowrap;
+}
