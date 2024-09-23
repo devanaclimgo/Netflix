@@ -8,7 +8,7 @@ header {
     ),
     url("/img/inicio/banner-1.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   padding: 0.26rem 0.75rem 0 0.75rem;
   width: 100%;
   background-position: center;
