@@ -1,19 +1,70 @@
-.catalogo h3 {
-  color: white;
-  margin-bottom: 0.7rem;
-  margin-top: 2rem;
-}
-
-.catalogo.um h3 {
-  margin-top: 5rem;
-}
-
-.catalogo li {
-  margin-right: 1rem;
-  list-style-type: none;
-}
-
 .container {
   overflow-x: hidden;
-  white-space: nowrap;
+}
+
+.container h3 {
+  color: white;
+  font-size: 20px;
+  line-height: 14px;
+  font-weight: 600;
+  margin: 36px 12px;
+  margin-top: 4rem;
+}
+
+.container:first-child h3 {
+  margin-top: 6rem;
+}
+
+.swiper-container {
+  overflow: visible;
+}
+
+.swiper-slide {
+  transition: all 300ms ease-in-out;
+  border-radius: 5px;
+}
+
+.swiper-slide img {
+  border-radius: 5px;
+  max-width: 18rem;
+  cursor: grab;
+  display: block;
+}
+
+.swiper-slide img:active {
+  cursor: grabbing;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.2);
+  transition: all 300ms ease-in-out;
+  transition-delay: 300ms;
+  z-index: 1;
+}
+
+.swiper-slide:hover img {
+  transition-delay: 300ms;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.swipper-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 600px) {
+  .swiper-slide img {
+    max-width: 14rem;
+  }
+  .swiper-button-next1, .swiper-button-next2, .swiper-button-next3, .swiper-button-next4
+  .swiper-button-prev1, .swiper-button-prev2, .swiper-button-prev3, .swiper-button-prev4 {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .swiper-slide img {
+    max-width: 10.5rem;
+    border-radius: 2px;
+  }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" style="----swiper-theme-color: #FFF !important;">
 
 <head>
   <meta charset="UTF-8">
@@ -9,23 +9,25 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
   </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
   <header>
     <div class="paginas">
       <div class="menu">
-      <img src="./img/menu/logo-netflix-no-bg.svg" width="103px" height="33" alt="Logo Netflix">
-      <nav>
-        <ul id="main-menu">
-        <li><a href="#">Início</a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#">Filmes</a></li>
-        <li><a href="#">Bombando</a></li>
-        <li><a href="#">Minha lista</a></li>
-      </ul>
-      </nav>
-    </div>
+        <img src="./img/menu/logo-netflix-no-bg.svg" width="103px" height="33" alt="Logo Netflix">
+        <nav>
+          <ul id="main-menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Séries</a></li>
+            <li><a href="#">Filmes</a></li>
+            <li><a href="#">Bombando</a></li>
+            <li><a href="#">Minha lista</a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="perfil">
         <a href="#"><img src="./img/menu/icons8-search.svg" alt="Ícone Pesquisa" width="20"></a>
         <a href="#"><img src="./img/menu/icons8-notification.svg" width="20" alt="Ícone Notificação"></a>
@@ -47,67 +49,108 @@
       </div>
     </article>
     <article>
-      <section class="catalogo um">
+      <section class="container">
         <h3>Minha lista</h3>
-        <div class="container">
-        <ul>
-          <li><img src="./img/linha-1/poster_01.png" alt="Bojack Horseman" width="260" height="145"></li>
-          <li><img src="./img/linha-1/poster_02.png" alt="Ozark" width="260" height="145"></li>
-          <li><img src="./img/linha-1/poster_03.png" alt="A vizinha da mulher na janela" width="260" height="145"></li>
-          <li><img src="./img/linha-1/poster_04.png" alt="Breaking Bad" width="260" height="145"></li>
-          <li><img src="./img/linha-1/poster_05.png" alt="The end of the f world" width="260" height="145"></li>
-        </ul>
-      </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-1/poster_01.png" alt="Bojack Horseman" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-1/poster_02.png" alt="Ozark" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-1/poster_03.png" alt="A vizinha da mulher na janela" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-1/poster_04.png" alt="Breaking Bad" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-1/poster_05.png" alt="The end of the f world" width="260" height="145"></a></div>
+          </div>
+          <div class="swiper-button-prev1"></div>
+          <div class="swiper-button-next1"></div>
+        </div>
       </section>
-      <section class="catalogo dois">
+      <section class="container">
         <h3>Em alta</h3>
-        <div class="container">
-          <ul>
-          <li><img src="./img/linha-2/poster_012.png" alt="Stranger Things" width="260" height="145"></li>
-          <li><img src="./img/linha-2/poster_013.png" alt="Queen Loretta" width="260" height="145"></li>
-          <li><img src="./img/linha-2/poster_022.png" alt="The Umbrella Academy" width="260" height="145"></li>
-          <li><img src="./img/linha-2/poster_023.png" alt="As 7 vidas de Lea" width="260" height="145"></li>
-          <li><img src="./img/linha-2/poster_032.png" alt="Peaky Blinders" width="260" height="145"></li>
-          <li><img src="./img/linha-2/poster_042.png" alt="Arremesando ALto" width="260" height="145"></li>
-          <li><img src="./img/linha-2/poster_052.png" alt="Amor & Gelato" width="260" height="145"></li>
-          <li><img src="./img/linha-2/poster_062.png" alt="La casa de papel Coreia" width="260" height="145"></li>
-        </ul>
-      </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-2/poster_012.png" alt="Stranger Things" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-2/poster_013.png" alt="Queen Loretta" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-2/poster_022.png" alt="The Umbrella Academy" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-2/poster_023.png" alt="As 7 vidas de Lea" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-2/poster_032.png" alt="Peaky Blinders" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-2/poster_042.png" alt="Arremesando ALto" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-2/poster_052.png" alt="Amor & Gelato" width="260" height="145"><a class="thumbTile" href="#"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-2/poster_062.png" alt="La casa de papel Coreia" width="260" height="145"></a></div>
+          </div>
+          <div class="swiper-button-prev2"></div>
+          <div class="swiper-button-next2"></div>
+        </div>
       </section>
-      <section class="catalogo tres">
+      <section class="container">
         <h3>Séries estrangeiras</h3>
-        <div class="container">
-          <ul>
-          <li><img src="./img/linha-3/poster_033.png" alt="Young Royals" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_053.png" alt="DARK" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_063.png" alt="Bem vindos ao Éden" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_073.png" alt="Ozark" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_083.png" alt="Era uma vez um crime" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_093.png" alt="Ted Bundy tapes" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_103.png" alt="Gabriel 'Fluffy' Iglesias" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_112.png" alt="Polar" width="260" height="145"></li>
-        </ul>
-      </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_033.png" alt="Young Royals" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_053.png" alt="DARK" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_063.png" alt="Bem vindos ao Éden" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_073.png" alt="Ozark" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_083.png" alt="Era uma vez um crime" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_093.png" alt="Ted Bundy tapes" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_103.png" alt="Gabriel 'Fluffy' Iglesias" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_112.png" alt="Polar" width="260" height="145"></a></div>
+          </div>
+          <div class="swiper-button-prev3"></div>
+          <div class="swiper-button-next3"></div>
+        </div>
       </section>
-      <section class="catalogo quatro">
+      <section class="container">
         <h3>Séries excêntricas de humor ácido</h3>
-        <div class="container">
-          <ul>
-          <li><img src="./img/linha-3/poster_123.png" alt="Fyre" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_133.png" alt="Friends from college" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_143.png" alt="Riverdale" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_153.png" alt="Velvet Buzzsow" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_163.png" alt="Amazing interiors" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_173.png" alt="The Good Place" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_183.png" alt="Unbreakable Kimmy Schmidt" width="260" height="145"></li>
-          <li><img src="./img/linha-3/poster_073.png" alt="Ozark" width="260" height="145"></li>
-          <li><img src="./img/linha-2/poster_022.png" alt="The Umbrella Academy" width="260" height="145"></li>
-          <li><img src="./img/linha-1/poster_01.png" alt="Bojack Horseman" width="260" height="145"></li>
-          <li><img src="./img/linha-1/poster_04.png" alt="Breaking Bad" width="260" height="145"></li>
-        </ul>
-      </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_123.png" alt="Fyre" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_133.png" alt="Friends from college" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_143.png" alt="Riverdale" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_153.png" alt="Velvet Buzzsow" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_163.png" alt="Amazing interiors" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_173.png" alt="The Good Place" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_183.png" alt="Unbreakable Kimmy Schmidt" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-3/poster_073.png" alt="Ozark" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-2/poster_022.png" alt="The Umbrella Academy" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-1/poster_01.png" alt="Bojack Horseman" width="260" height="145"></a></div>
+            <div class="swiper-slide my-slide"><a class="thumbTile" href="#"><img src="./img/linha-1/poster_04.png" alt="Breaking Bad" width="260" height="145"></a></div>
+          </div>
+          <div class="swiper-button-prev4"></div>
+          <div class="swiper-button-next4"></div>
+        </div>
       </section>
     </article>
+    <footer>
+      <div class="redes-socias">
+        <a href="#"><img src="#" alt="ícone facebook"></a>
+        <a href="#"><img src="#" alt="ícone insta"></a>
+        <a href="#"><img src="#" alt="ícone twitter"></a>
+        <a href="#"><img src="#" alt="ícone youtube"></a>
+      </div>
+      <div class="info">
+        <ul>
+          <li><a href="#">Idioma e legendas</a></li>
+          <li><a href="#">Imprensa</a></li>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Entre em contato</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Audiodescrição</a></li>
+          <li><a href="#">Relações com investidores</a></li>
+          <li><a href="#">Avisos legais</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Centro de ajuda</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Preferência de cookies</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Cartão pré-pago</a></li>
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Informações corporativas</a></li>
+        </ul>
+      </div>
+      <a href="#">Código de serviço</a>
+      <p>© 1997-2022 Netflix, Inc.</p>
+    </footer>
   </main>
 
   <script src="script.js"></script>
