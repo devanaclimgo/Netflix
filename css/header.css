@@ -20,6 +20,7 @@
   flex-direction: row;
   list-style-type: none;
   gap: 0.7rem;
+  padding-top: 0.2rem;
 }
 
 .perfil {
