@@ -22,6 +22,12 @@
   gap: 0.7rem;
 }
 
+.perfil {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  padding-top: 0.2rem;
+}
+
 nav a:-webkit-any-link {
   text-decoration: none;
   color: var(--text-1);
