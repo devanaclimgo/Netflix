@@ -2,99 +2,110 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3rem 2rem;
+  margin-top: 2rem;
 }
 
-.menu {
+.paginas, .menu, .perfil {
   display: flex;
-  gap: 50px;
-  align-items: center;
+  flex-direction: row;
 }
 
-ul {
+.menu img {
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+
+.menu nav ul {
   display: flex;
+  flex-direction: row;
   list-style-type: none;
-}
-
-.menu li + li {
-  padding-left: 0.9rem;
-}
-
-.menu nav a {
-  text-decoration: none;
-  color: var(--text-1);
-}
-
-.menu nav a::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background-color: var(--text-1);
-  transition: width 0.2s ease;
-}
-
-.menu nav a:hover::after {
-  width: 100%;
+  gap: 0.7rem;
+  padding-top: 0.2rem;
 }
 
 .perfil {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  padding-top: 0.2rem;
 }
 
-.perfil div {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+nav a:-webkit-any-link {
+  text-decoration: none;
+  color: var(--text-1);
+  position: relative;
 }
 
-.perfil div img:first-child {
-  border-radius: 3px;
+nav a:-webkit-any-link:hover {
+  color: white;
+}
+
+nav a:-webkit-any-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+  display: block;
+  background-color: transparent;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+nav a:-webkit-any-link:hover::after {
+  background-color: white;
+  transform: scaleX(1);
 }
 
 .menu-toggle {
   display: none;
 }
 
-/*styles para menu dropdown*/
+.perfil {
+  display: flex;
+  gap: 1rem;
+  padding-right: 4rem;
+}
+
+.perfil div {
+  display: flex;
+  gap: 0.5rem;
+}
+
 @media (max-width: 800px) {
   .paginas .menu nav ul {
     display: none;
   }
-  .menu nav a {
-    color: white;
-  }
   .paginas .menu nav ul.show {
     display: block;
-    position: absolute;
-    background-color: rgba(109, 109, 110, 0.7);
-    z-index: 1;
-    border-radius: 4px;
     transition: height 0.3s ease-in-out;
   }
-  .paginas .menu nav ul.show li {
-    display: block;
-    margin-right: 0;
-    padding: 0.3rem;
-  }
   .menu-toggle {
-    display: block;
-    background-color: transparent;
-    font-weight: 500;
-    color:var(--text-1);
-    font-size: 20px;
-    padding: 0.6rem 0.4rem;
-    gap: 0.5rem;
-    border: solid transparent;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    color: var(--text-1);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    padding: 0.3rem;
+    border: 2px solid transparent;
     border-radius: 3px;
   }
-  .menu-toggle:hover{
-    border: white solid 2px;
+  .menu-toggle:hover {
+    border-color: white;
     color: white;
+    transition: 0.2s ease-in-out;
   }
-  .menu-toggle.clicked {
-    color: white;
+  .menu nav ul {
+    display: block;
+    background-color: rgba(240, 240, 240, 0.2);
+    padding: 0.3rem;
+    border-radius: 3px;
+  }
+  .menu nav ul li {
+    margin-bottom: 0.5rem;
+  }
+  .menu nav ul li a {
+    color: #ffffff;
   }
 }
