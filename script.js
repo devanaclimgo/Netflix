@@ -8,9 +8,11 @@ toggleButton.classList.add("menu-toggle");
 mainMenu.parentNode.insertBefore(toggleButton, mainMenu);
 
 toggleButton.addEventListener("click", function () {
-  mainMenu.classList.toggle("show");
-
-  toggleButton.classList.toggle("clicked");
+  if (mainMenu.classList.contains("show")) {
+    mainMenu.classList.remove("show");
+  } else {
+    mainMenu.classList.add("show");
+  }
 });
 
 

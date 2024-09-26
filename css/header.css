@@ -1,6 +1,8 @@
 .paginas {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 .paginas, .menu, .perfil {
@@ -9,11 +11,8 @@
 }
 
 .menu img {
-  padding: 2rem 4rem;
-}
-
-.menu nav, .perfil {
-  padding-top: 2rem;
+  padding-left: 4rem;
+  padding-right: 2rem;
 }
 
 .menu nav ul {
@@ -67,16 +66,39 @@ nav a:-webkit-any-link:hover::after {
 }
 
 @media (max-width: 800px) {
-  .menu-toggle {
+  .paginas .menu nav ul {
+    display: none;
+  }
+  .paginas .menu nav ul.show {
     display: block;
+    transition: height 0.3s ease-in-out;
+  }
+  .menu-toggle {
+    display: inline-block;
     border: none;
     background: transparent;
-    color: white;
+    color: var(--text-1);
     font-family: "Inter", sans-serif;
     font-size: 18px;
+    padding: 0.3rem;
+    border: 2px solid transparent;
+    border-radius: 3px;
   }
-  .menu-toggle .show {
+  .menu-toggle:hover {
+    border-color: white;
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+  .menu nav ul {
     display: block;
-    /*continuar por aqui = fazer aparecer só quando clicdo e adicionar hover*/
+    background-color: rgba(240, 240, 240, 0.2);
+    padding: 0.3rem;
+    border-radius: 3px;
+  }
+  .menu nav ul li {
+    margin-bottom: 0.5rem;
+  }
+  .menu nav ul li a {
+    color: #ffffff;
   }
 }
