@@ -15,7 +15,7 @@ header {
   position: absolute;
 }
 
-main article {
+.home {
   height: 80%;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@ main article {
   margin-left: 2rem;
 }
 
-main article p {
+.home p {
   color: white;
   width: 450px;
   margin-top: 1.5rem;

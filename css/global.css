@@ -12,3 +12,7 @@
   font-family: "Inter", sans-serif;
   --text-1: #B9BCBB;
 }
+
+main {
+  background-color: black;
+}
