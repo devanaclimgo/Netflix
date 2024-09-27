@@ -12,3 +12,12 @@
   font-family: "Inter", sans-serif;
   --text-1: #B9BCBB;
 }
+
+main {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+header, main {
+  box-sizing: border-box;
+}

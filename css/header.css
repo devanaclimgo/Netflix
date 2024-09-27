@@ -5,14 +5,17 @@
   margin-top: 2rem;
 }
 
-.paginas, .menu, .perfil {
+.paginas,
+.menu,
+.perfil {
   display: flex;
   flex-direction: row;
 }
 
 .menu img {
-  padding-left: 4rem;
+  padding-left: 2rem;
   padding-right: 2rem;
+  width: 103px;
 }
 
 .menu nav ul {

@@ -1,0 +1,28 @@
+.catalogo {
+  position: relative;
+  margin-top: 20rem;
+}
+
+.container {
+  margin-left: 3rem;
+}
+
+.container h3 {
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.lista {
+  display: flex;
+  padding-bottom: 3rem;
+  gap: 1rem;
+}
+
+.lista div a img {
+  border-radius: 3px;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
