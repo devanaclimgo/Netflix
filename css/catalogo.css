@@ -21,3 +21,8 @@
 .lista div a img {
   border-radius: 3px;
 }
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
