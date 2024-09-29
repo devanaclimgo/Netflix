@@ -11,6 +11,7 @@
 :root {
   font-family: "Inter", sans-serif;
   --text-1: #B9BCBB;
+  --text-2: #7B7B7B;
 }
 
 main {
@@ -20,4 +21,9 @@ main {
 
 header, main {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-2);
 }

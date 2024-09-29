@@ -1,0 +1,17 @@
+footer {
+  background-color: black;
+  padding-left: 3rem;
+}
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
