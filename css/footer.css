@@ -19,3 +19,13 @@ footer {
 p {
   color: var(--text-2);
 }
+
+.codigo {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.codigo a {
+  border: 2px solid var(--text-2);
+  padding: 0.7rem;
+}
