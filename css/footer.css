@@ -15,3 +15,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
+p {
+  color: var(--text-2);
+}
