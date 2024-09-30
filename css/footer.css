@@ -13,7 +13,8 @@ footer {
 }
 
 .info {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -45,4 +46,19 @@ p {
   border: 2px solid white;
   color: white;
   transition: 0.2s ease-in-out;
+}
+
+@media (max-width:950px) {
+  .info {
+    grid-template-columns: 1fr 1fr;
+  }
+  .info ul {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:540px) {
+  .info {
+    grid-template-columns: 1fr;
+  }
 }
