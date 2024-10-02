@@ -5,24 +5,45 @@
 
 .container {
   margin-left: 3rem;
+  height: 200px;
+  margin-bottom: 2rem;
 }
 
 .container h3 {
   color: white;
-  padding-bottom: 1rem;
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: 600;
 }
 
 .lista {
   display: flex;
-  gap: 1rem;
-  padding-bottom: 3rem;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  position: relative;
 }
 
 .lista div a img {
   border-radius: 3px;
 }
 
-.swiper {
-  width: 600px;
+section {
+  width: auto;
+  position: relative;
+  display: flex;
+  margin: 20px 0;
+}
 
+.item {
+  padding: 0 2px;
+  transition: 250ms all;
+}
+
+.-animation:hover {
+  margin: 0 40px;
+  transform: scale(1.2);
+}
+
+.item a img {
+  padding-right: 5px;
 }
