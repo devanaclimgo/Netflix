@@ -47,3 +47,12 @@ section {
 .item a img {
   padding-right: 5px;
 }
+
+.swiper {
+  width: 30;
+  height: 30;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: white !important;
+}
