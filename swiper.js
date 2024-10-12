@@ -1,10 +1,18 @@
 //swiper
+import Swiper from './node_modules/swiper';
+import { Navigation, Pagination } from './node_modules/swiper/swiper-bundle';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 function swiper() {
-  const swiper = new swiper(".swiper", {
+  const swiper = new Swiper(".swiper", {
     // Optional parameters
-    modules: [Navigation],
+    modules: [Navigation, Pagination],
     spaceBetween: 5,
     slidesPerView: 2,
+    direction: 'horizontal',
     loop: true,
     freeMode: true,
     loopAdicionalSlides: 5,
@@ -13,6 +21,11 @@ function swiper() {
     enabled: true,
     observer: true,
     observeParents: true,
+
+    // Pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
 
     // Navigation arrows
     navigation: {
@@ -24,14 +37,7 @@ function swiper() {
     allowSlidePrev: true
   });
 
-  const nextButton = document.querySelector(".swiper-button-next");
-  const prevButton = document.querySelector(".swiper-button-prev");
-
-  nextButton.addEventListener("click", () => {
-    swiper.slideNext();
-  });
-
-  prevButton.addEventListener("click", () => {
-    swiper.slidePrev();
+  document.addEventListener('click', function() {
+    swiper();
   });
 }
